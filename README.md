@@ -1,6 +1,8 @@
 # Central Library Project
 
-Component Categories
+This is my personal component library, currently serving as a structured skeleton. While empty at the moment, it follows a carefully designed categorization system for optimal organization and future expansion.
+
+# Component Categories
 
 The list of component categories was intentionally chosen as the most universal and predictable format for technical systems. Below is the list of groups:
 
@@ -29,19 +31,32 @@ The list of component categories was intentionally chosen as the most universal 
 - memory – Memory (EEPROM, Flash, SD cards; can stay under ic, but separate if extensive).
 - rf – RF components (antennas, RF modules, for wireless projects).
 
-Naming Conventions
+# Library Structure Principles
 
-This category list has a fixed structure and should not be expanded further. To ensure maximum compatibility and consistency, all filenames and tables use snake_case notation—lowercase Latin letters with underscores as separators (e.g., circuit_protection.csv, power_supply.csv).
+1. Fixed Taxonomy
+ 
+  - The category list is intentionally finite and closed
+  - New components fit existing categories
 
-This approach ensures:
+2. Naming Convention
 
-- No case-sensitivity issues (critical for Linux/Unix).
-- No need for special character escaping.
-- Compliance with best practices for machine-readable formats.
+  - Strict snake_case format (e.g., circuit_protection)
+  - Lowercase ASCII only
+  - Underscore as word separator
 
-This naming standard is especially important for:
+3. Technical Advantages
 
-- Version control systems (Git).
-- CI/CD pipelines.
-- Automated data processing scripts.
-- Cross-platform projects.
+  - Case-insensitive compatibility (critical for cross-platform use)
+  - No special character handling required
+  - Machine-readable optimization
+
+## Implementation Notes
+
+This structure is particularly valuable for:
+
+✔ Version control systems (Git)
+✔ Automated CI/CD workflows
+✔ Script-based component management
+✔ Multi-platform development environments
+
+The empty skeleton will be populated while strictly maintaining these organizational principles to ensure long-term usability and consistency.
