@@ -1,45 +1,47 @@
 # Central Library Project
 
-## Категории компонентов
+Component Categories
 
-Формат перечень категорий компонентов сознательно выбран как наиболее универсальный и предсказуемый для технических систем. Список групп представлен ниже:
+The list of component categories was intentionally chosen as the most universal and predictable format for technical systems. Below is the list of groups:
 
-- audio – Аудиокомпоненты (микрофоны, динамики, кодеки).
-- circuit_protection - Предохранители, TVS-диоды, варисторы.
-- display – Дисплеи, экраны, индикаторы.
-- filter – Фильтры (EMI, ферритовые бусины).
-- mechanical – Корпуса, крепежи, heatsinks.
-- switch – Кнопки, переключатели, реле.
-- transistor – Биполярные, MOSFET, IGBT.
-- battery – Аккумуляторы, разъемы для батарей.
-- connector – Разъемы (USB, HDMI, клеммы).
-- documentation – Символы для обозначений на схеме.
-- ic – Микросхемы (лучше не дробить, но можно подкатегории в виде тегов).
-- oscillator – Кварцы, генераторы.
-- testpoint – Контрольные точки.
-- capacitor – Конденсаторы (керамика, электролиты).
-- diode – Диоды, стабилитроны, Шоттки.
-- fpga – ПЛИС и связанные компоненты.
-- inductor – Катушки, дроссели.
-- resistor – Резисторы, термисторы.
-- transformer – Трансформаторы.
-- optics – Оптопары, фотодиоды, ИК-приемники.
-- led – Светодиоды (можно в Optics, но если их много – отдельно).
-- sensor – Датчики (температуры, давления, Холла).
-- memory – EEPROM, Flash, SD-карты (можно в IC, но если много – выделить).
-- rf – Антенны, RF-модули (если есть беспроводные проекты).
+- audio – Audio components (microphones, speakers, codecs).
+- circuit_protection – Circuit protection (fuses, TVS diodes, varistors).
+- display – Displays, screens, indicators.
+- filter – Filters (EMI filters, ferrite beads).
+- mechanical – Enclosures, mounting hardware, heatsinks.
+- switch – Buttons, switches, relays.
+- transistor – Transistors (BJTs, MOSFETs, IGBTs).
+- battery – Batteries, battery connectors.
+- connector – Connectors (USB, HDMI, terminals).
+- documentation – Documentation symbols (for schematic annotations).
+- ic – Integrated circuits (preferably not split further, but subcategories can be added as tags).
+- oscillator – Crystals, oscillators.
+- testpoint – Test points.
+- capacitor – Capacitors (ceramic, electrolytic).
+- diode – Diodes (Zener, Schottky, etc.).
+- fpga – FPGAs and related components.
+- inductor – Inductors, chokes.
+- resistor – Resistors, thermistors.
+- transformer – Transformers.
+- optics – Optoelectronics (optocouplers, photodiodes, IR receivers).
+- led – LEDs (can be under optics, but if numerous, keep separate).
+- sensor – Sensors (temperature, pressure, Hall effect).
+- memory – Memory (EEPROM, Flash, SD cards; can stay under ic, but separate if extensive).
+- rf – RF components (antennas, RF modules, for wireless projects).
 
-Данные списки имеют фиксированную структуру и не подлежат дальнейшему расширению. Для обеспечения максимальной совместимости и единообразия все имена файлов и таблиц используют snake_case нотацию - латинские буквы в нижнем регистре с подчеркиваниями в качестве разделителей (например: circuit_protection.csv, power_supply.csv). Такой подход гарантирует:
+Naming Conventions
 
-Дополнительные преимущества:
+This category list has a fixed structure and should not be expanded further. To ensure maximum compatibility and consistency, all filenames and tables use snake_case notation—lowercase Latin letters with underscores as separators (e.g., circuit_protection.csv, power_supply.csv).
 
-1 Исключены проблемы с регистром букв (актуально для Linux/Unix)
-2 Нет необходимости в экранировании специальных символов
-3 Соответствует best practices для machine-readable форматов
+This approach ensures:
 
-Такой стандарт именования особенно важен для:
+- No case-sensitivity issues (critical for Linux/Unix).
+- No need for special character escaping.
+- Compliance with best practices for machine-readable formats.
 
-- Систем контроля версий (Git)
-- CI/CD пайплайнов
-- Скриптов автоматической обработки данных
-- Межплатформенных проектов
+This naming standard is especially important for:
+
+- Version control systems (Git).
+- CI/CD pipelines.
+- Automated data processing scripts.
+- Cross-platform projects.
