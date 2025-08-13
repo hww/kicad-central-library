@@ -2,7 +2,7 @@
 
 This is my personal component library, currently serving as a structured skeleton. While empty at the moment, it follows a carefully designed categorization system for optimal organization and future expansion.
 
-# Component Categories
+## Component Categories
 
 The list of component categories was intentionally chosen as the most universal and predictable format for technical systems. Below is the list of groups:
 
@@ -31,7 +31,7 @@ The list of component categories was intentionally chosen as the most universal 
 - memory – Memory (EEPROM, Flash, SD cards; can stay under ic, but separate if extensive).
 - rf – RF components (antennas, RF modules, for wireless projects).
 
-# Library Structure Principles
+## Library Structure Principles
 
 1. Fixed Taxonomy
  
